@@ -15,6 +15,7 @@ body{
 @media screen and (min-width: 780px) {
     body{     
         background-image: url("../images/bg-desktop.svg");
+        background-size: cover;
     }
 }
 
@@ -25,7 +26,7 @@ body{
     .main{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 8% auto 15% 15%;
+        grid-template-rows: 8% auto 10% 10%;
         grid-template-areas: "logo   logo"
                    "aside  card"
                    "rrss   rrss" 
@@ -112,12 +113,12 @@ aside{
     box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
 
-.btn-register:hover {
-    background-color: var(--soft-magenta);
-    color: white;    
-}
-
 @media screen and (min-width: 768px) {
+    .btn-register:hover {
+        background-color: var(--soft-magenta);
+        color: white;    
+    }
+
     .card{
         grid-area: card;
         margin-top: 100px;
@@ -136,8 +137,7 @@ aside{
 .rrss{    
     display: flex;
     justify-content: center;
-    margin-top: 50px;    
-    height: 200px;
+    margin-top: 50px;        
     margin-left: 0;
     padding-left: 0;
     list-style: none;
@@ -145,12 +145,13 @@ aside{
 .rrss__link {
     text-decoration: none;    
 }
-.rrss__link:hover {    
-    color: var(--soft-magenta);
-    
-}
+
 
 @media screen and (min-width: 768px) {
+    .rrss__link:hover {    
+        color: var(--soft-magenta);
+        
+    }
     .rrss{
         grid-area: rrss;
         justify-content: flex-end;        
@@ -172,14 +173,12 @@ aside{
     border-radius: 50%;
     margin-left: 15px;
 }
-
-.fab:hover{
-    color: var(--soft-magenta);
-    border:  var(--soft-magenta) solid 2px;
+@media screen and (min-width: 768px) {
+    .fab:hover{
+        color: var(--soft-magenta);
+        border:  var(--soft-magenta) solid 2px;
+    }
 }
-
-
-
 
 @media screen and (min-width: 768px) {
     footer{
