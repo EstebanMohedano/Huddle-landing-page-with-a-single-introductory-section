@@ -1,6 +1,6 @@
 :root{
     --Violet: hsl(257, 40%, 49%);
-    --Soft-Magenta: hsl(300, 69%, 71%);
+    --soft-magenta: hsl(300, 69%, 71%);
 }
 
 body{
@@ -53,19 +53,18 @@ body{
     text-align: left;        
 }
 
-aside{
-    grid-area: aside;
+aside{    
     margin-top:80px;
     background-image: url("../images/illustration-mockups.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height:215px;
-    width: 100%;
+    max-width: 100%;
 
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
     aside{
         grid-area: aside;
         height:350px;
@@ -103,15 +102,22 @@ aside{
     justify-content:center;
     align-items: center;
     color:var(--Violet);
+    font-family: 'Open Sans', sans-serif;        
     width:200px;
     height: 35px;
     background-color: white;
     border-radius: 20px;
     margin-top: 10px;
     font-size: 0.8rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
 
-@media screen and (min-width: 780px) {
+.btn-register:hover {
+    background-color: var(--soft-magenta);
+    color: white;    
+}
+
+@media screen and (min-width: 768px) {
     .card{
         grid-area: card;
         margin-top: 100px;
@@ -132,10 +138,19 @@ aside{
     justify-content: center;
     margin-top: 50px;    
     height: 200px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.rrss__link {
+    text-decoration: none;    
+}
+.rrss__link:hover {    
+    color: var(--soft-magenta);
     
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
     .rrss{
         grid-area: rrss;
         justify-content: flex-end;        
@@ -158,7 +173,15 @@ aside{
     margin-left: 15px;
 }
 
-@media screen and (min-width: 780px) {
+.fab:hover{
+    color: var(--soft-magenta);
+    border:  var(--soft-magenta) solid 2px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
     footer{
         grid-area:footer;
     }
